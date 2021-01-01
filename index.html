@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<style>
+
+#temp {
+    font-weight: 800;
+        font-size: larger ;
+        font-stretch: expanded;
+        font-family: 'Grandstander', cursive;
+        margin-top: 2em;
+        background-color: #fbc02d ;
+        font-family: cursive;
+        padding-left: 3em;
+        padding-top: 3em;
+        padding-right: 3em;
+        padding-bottom: 3em;
+}
+
+body {
+    background-image: url(img/temp.jpg);
+    background-repeat: no-repeat;
+    opacity: 1;
+    font-size: large;
+    font-weight: bolder;
+    padding: 4em;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    
+}
+
+
+
+p {
+    padding-top: 3em;
+}
+
+h1 {
+    padding-bottom: 0.5em;
+}
+
+input {
+    border-radius: 5em;
+    border: solid;
+}
+</style>
+
+<body>
+
+
+<div class="container" id="temp">
+    <h2 class="center-align">TEMPERATURE CONVERTER</h2>
+
+<p>Insert a number into one of the input fields below:</p>
+
+<p><input id="c" onkeyup="convert('C')"> Celsius</p>
+
+<p><input id="f" onkeyup="convert('F')"> Fahrenheit</p> 
+</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="temp.js"></script>
+</body>
+</html>
